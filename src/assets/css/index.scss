@@ -1,0 +1,36 @@
+
+
+*{
+    margin: 0 auto;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.t_r{
+    text-align: right;
+}
+.t_c{
+    text-align: center;
+}
+//文本不能被选择
+.no-select{
+    user-select: none;
+}
+
+/*滚动条样式*/
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.23);
+    background: rgba(0,0,0,0.23);
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    background: #fff;
+    // -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    // border-radius: 0;
+    // background: rgba(0,0,0,0.1);
+}
