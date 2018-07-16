@@ -42,6 +42,29 @@
                 </el-tab-pane>
             </el-tabs>
         </el-row>
+        <el-row class="bars">
+            <el-col :span="6" class="t_c">
+                <div class="box">
+                    <i class="el-icon-menu"></i>
+                </div>
+            </el-col>
+            <el-col :span="6" class="t_c">
+                <div class="box">
+                    <i class="el-icon-search"></i>
+                </div>
+            </el-col>
+            <el-col :span="6" class="t_c">
+                <el-badge :value="2" class="box">
+                    <i class="el-icon-bell"></i>
+                </el-badge>
+            </el-col>
+            
+            <el-col :span="6" class="t_c">
+                <div class="box">
+                    <i class="el-icon-bell"></i>
+                </div>
+            </el-col>
+        </el-row>
 
 
         <!-- <button @click="test">testtttt</button> -->
@@ -96,7 +119,7 @@ export default {
     top: 80px;
     right: 50px;
     width: 252px;
-    height: 600px;
+    height: 630px;
     border-radius: 7px;
     border: 2px solid #ddd;
     box-shadow: 0 0 5px #ddd;
@@ -170,7 +193,11 @@ export default {
     }
     .tabs{
         /deep/ .el-tabs__header{
-            margin-bottom: 5px;
+            margin-bottom: 3px;
+        }
+        /deep/ .el-tabs__content{
+            overflow: auto;
+            height: 428px;
         }
         /deep/ .el-tabs__nav{
             width: 100%;
@@ -190,6 +217,35 @@ export default {
         /deep/ .el-tabs__nav-wrap::after{
             height: 1px;
             background-color: #eee;
+        }
+    }
+    .bars{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+        line-height: 32px;
+        font-size: 20px;
+        color: #aaa;
+        border-top: 1px solid #eee;
+        background: #fff;
+        .box{
+            display: inline-block;
+            height: 35px;
+            padding: 0 7px;
+            cursor: pointer;
+        }
+        .box:hover{
+            background: #eee;
+        }
+        /deep/ .el-badge__content.is-fixed{
+            top: 7px;
+            right: 15px;
+        }
+        /deep/ .el-badge__content{
+            height: 14px;
+            line-height: 14px;
+            padding: 0 4px;
         }
     }
     

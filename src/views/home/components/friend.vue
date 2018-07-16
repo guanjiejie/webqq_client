@@ -79,7 +79,52 @@ export default {
                         lastTime: "13:23",
                         lastMsg: "德玛西亚万岁！",
                         unreadNum: 5
-                    }
+                    },
+                    {
+                        id: "0002",
+                        avatar: "@/assets/images/defaultAvatar.png",
+                        nickname: "德玛西亚",
+                        sign: "不错的天气，不错的你我",
+                        lastTime: "13:23",
+                        lastMsg: "德玛西亚万岁！",
+                        unreadNum: 5
+                    },
+                    {
+                        id: "0002",
+                        avatar: "@/assets/images/defaultAvatar.png",
+                        nickname: "德玛西亚",
+                        sign: "不错的天气，不错的你我",
+                        lastTime: "13:23",
+                        lastMsg: "德玛西亚万岁！",
+                        unreadNum: 5
+                    },
+                    {
+                        id: "0002",
+                        avatar: "@/assets/images/defaultAvatar.png",
+                        nickname: "德玛西亚",
+                        sign: "不错的天气，不错的你我",
+                        lastTime: "13:23",
+                        lastMsg: "德玛西亚万岁！",
+                        unreadNum: 5
+                    },
+                    {
+                        id: "0002",
+                        avatar: "@/assets/images/defaultAvatar.png",
+                        nickname: "德玛西亚",
+                        sign: "不错的天气，不错的你我",
+                        lastTime: "13:23",
+                        lastMsg: "德玛西亚万岁！",
+                        unreadNum: 5
+                    },
+                    {
+                        id: "0002",
+                        avatar: "@/assets/images/defaultAvatar.png",
+                        nickname: "德玛西亚",
+                        sign: "不错的天气，不错的你我",
+                        lastTime: "13:23",
+                        lastMsg: "德玛西亚万岁！",
+                        unreadNum: 5
+                    },
                 ];
             }
         }

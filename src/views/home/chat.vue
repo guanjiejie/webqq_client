@@ -11,17 +11,17 @@
         <el-row class="chat-list">
 
         </el-row>
-        <el-row class="chat-input">
-            <el-row class="bars">
-
+        <el-row class="chat-input"> 
+            <!-- 工具栏，如表情等，暂未开发，隐藏 -->
+            <el-row class="bars" style="display: none;">
             </el-row>
             <el-row class="text">
                 <el-input type="textarea" rows="3">
                 </el-input>
             </el-row>
             <el-row class="chat-btns">
-                <el-button size="small" class="send">发送</el-button>
-                <el-button size="small">关闭</el-button>
+                <el-button size="mini" class="send">发送</el-button>
+                <el-button size="mini">关闭</el-button>
             </el-row>
         </el-row>
     </div>
@@ -43,7 +43,7 @@
 </script>
 <style scoped lang="scss">
 .chat{
-    width: 540px;
+    width: 530px;
     position: absolute;
     top: 150px;
     left: 0;
@@ -78,12 +78,14 @@
     }
     .chat-input{
         //height: 120px;
+        padding-top: 8px;
         .bars{
             height: 24px;
         }
         .text{
             padding-right: 2px;
             /deep/ textarea{
+                padding: 5px 8px;
                 border: 0;
                 resize: none;
                 font-size: 13px;
@@ -95,7 +97,7 @@
             margin-right: 8px;
             /deep/ button{
                 float: right;
-                margin: 8px;
+                margin: 5px;
                 width: 80px;
                 letter-spacing: 5px;
                 font-size: 12px;
